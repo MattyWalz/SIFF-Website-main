@@ -43,22 +43,24 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             Follow us on LinkedIn or Instagram to get notified when they open.
           </p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <a
               href="https://www.linkedin.com/company/bocconi-students-for-football-finance/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 text-gray-900 hover:bg-gray-50 cursor-pointer"
+              aria-label="LinkedIn"
+              className="text-gray-700 hover:text-[#156BBC] transition-colors cursor-pointer hover:scale-110 transform duration-200"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-6 w-6" />
             </a>
             <a
               href="https://www.instagram.com/siff.official/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 text-gray-900 hover:bg-gray-50 cursor-pointer"
+              aria-label="Instagram"
+              className="text-gray-700 hover:text-[#156BBC] transition-colors cursor-pointer hover:scale-110 transform duration-200"
             >
-              <Instagram className="h-5 w-5" />
+              <Instagram className="h-6 w-6" />
             </a>
           </div>
 

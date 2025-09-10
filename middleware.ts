@@ -2,13 +2,9 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
-  // Skip redirect during local development to keep `npm run dev` working
-  if (process.env.NODE_ENV !== 'production') {
-    return NextResponse.next()
-  }
-
-  // In production: enforce HTTPS when behind a proxy (e.g., Vercel)
+  // Check if the request is HTTP (not HTTPS)
   if (request.headers.get('x-forwarded-proto') === 'http') {
+    // Redirect to HTTPS
     const url = request.nextUrl.clone()
     url.protocol = 'https:'
     return NextResponse.redirect(url, 301)
