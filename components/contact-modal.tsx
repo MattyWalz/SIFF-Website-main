@@ -48,8 +48,8 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               href="https://www.linkedin.com/company/bocconi-students-for-football-finance/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-md border border-gray-300 p-2 text-gray-900 hover:bg-gray-50 cursor-pointer"
-              aria-label="LinkedIn"
+              className="inline-flex items-center justify-center rounded-md border border-gray-300 p-2 text-gray-900 hover:bg-gray-50 cursor-pointer hover:scale-110 transform transition-all duration-200"
+              aria-label="Follow us on LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
@@ -57,12 +57,11 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               href="https://www.instagram.com/siff.official/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-md border border-gray-300 p-2 text-gray-900 hover:bg-gray-50 cursor-pointer"
-              aria-label="Instagram"
+              className="inline-flex items-center justify-center rounded-md border border-gray-300 p-2 text-gray-900 hover:bg-gray-50 cursor-pointer hover:scale-110 transform transition-all duration-200"
+              aria-label="Follow us on Instagram"
             >
               <Instagram className="h-5 w-5" />
             </a>
-            <div className="flex-1" />
           </div>
 
         </div>
