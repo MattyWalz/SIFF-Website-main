@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://siffofficial.org/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
